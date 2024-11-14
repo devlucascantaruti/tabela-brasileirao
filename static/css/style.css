@@ -1,0 +1,282 @@
+/* Font family: Anton, Anton SC, Archivo Black, Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+  position: absolute;
+  text-align: center;
+  background-color: #4CAF50; /* Cor de fundo do header */
+  color: white; /* Cor da fonte */
+  margin-bottom: 20px; /* Espaçamento abaixo do header */
+  width: 100%;  /* Garante que o cabeçalho ocupe toda a largura da tela */
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+}
+
+.container {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Para garantir que os elementos podem se reorganizar em telas pequenas */
+    padding-left: 40px;
+}
+
+.tabela-container {
+    flex: 1 1 50%;
+    max-width: 50%;
+}
+
+.forms-container {
+    flex: 1 1 15%;
+    max-width: 15%;
+    padding-right: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  /* Espaçamento entre os campos */
+    width: 100%;
+}
+
+form input[type="text"], 
+form input[type="number"] {
+    padding: 2px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.escudo-small {
+  width: 35px;  /* Tamanho do escudo ao lado do nome do time */
+  height: auto;
+  margin-right: 10px; /* Espaço entre o escudo e o nome do time */
+}
+
+/* Flexbox para alinhar o escudo e o nome do time */
+.time-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+button{
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h2{
+    color: black;
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+.proximos-jogos-container {
+    flex: 1 1 20%;
+    max-width: 20%;
+    text-align: center;
+}
+
+.proximos-jogos-container h2 {
+    margin-bottom: 15px;
+    color: black;
+}
+
+.proximos-jogos-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.proximos-jogos-container li {
+    font-size: 16px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.jogo-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.jogo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jogo-data {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.jogo-times {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.escudo-proxjogo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.versus {
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+.jogo-valor {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.jogo-valor input {
+  padding: 5px;
+  width: 60px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.x-separator {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 5px;
+  line-height: 30px;
+}
+
+.palpite {
+display: inline-block;
+width: 40px;
+text-align: center;
+font-size: 16px;
+margin: 0 10px;
+}
+
+.palpite input {
+width: 40px;
+height: 30px;
+text-align: center;
+font-size: 16px;
+border-style: none;
+background-color: transparent;
+border-radius: 5px;
+box-sizing: border-box;
+-moz-appearance: textfield;
+-webkit-appearance: none;
+}
+
+      
+.palpite input::-webkit-outer-spin-button,
+.palpite input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.palpite input:focus {
+    outline: none;
+    border-color: #007bff; /* Cor de foco */
+}
+
+.azul {
+  color: blue; /* Cor azul para as posições 1 a 5 */
+}
+
+.azul-ciano {
+  color: cyan; /* Cor azul ciano para as posições 6 e 7 */
+}
+
+.verde-escuro {
+  color: darkgreen; /* Cor verde escuro para as posições 8 a 13 */
+}
+
+.cinza-claro {
+  color: lightgray; /* Cor cinza claro para as posições 14 a 16 */
+}
+
+.vermelho {
+  color: red; /* Cor vermelha para as posições 17 a 20 */
+}
